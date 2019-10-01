@@ -33,6 +33,11 @@
     <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600" rel="stylesheet" type="text/css">
     <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="stylesheet" href="w3.css">
+
+
+
+
 		<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
 		<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
 		<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
@@ -45,7 +50,14 @@
 		<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-		<link rel="manifest" href="img/favicon/manifest.json">
+        <link rel="manifest" href="img/favicon/manifest.json">
+        
+
+    <style>
+                .mySlides {
+                    display:none;
+                }
+    </style>
     
     <style>
 
@@ -54,6 +66,74 @@
       margin:auto;
       padding:0;
       }
+
+
+      .dropbtn {
+    background-color:transparent;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+
 
 
  #example {
@@ -77,7 +157,7 @@ iframe {
       .parallax-image-1 {
 
          /* The image used */
-      background-image: url('img/index/blackened_catfish_credit_chris_wessling.jpg');
+      background-image: url('images/bb3.jpg"');
       /* Full height */
       height: 100%;
       width: 100%;
@@ -93,7 +173,7 @@ iframe {
       .parallax-image-2 {
 
          /* The image used */
-      background-image: url('img/index/john_e_carson_hotel_courtyard.jpg');
+      background-image: url('images/bb2.jpg');
       /* Full height */
       height: 100%;
       width: 100%;
@@ -111,7 +191,7 @@ iframe {
       .parallax-image-3 {
 
          /* The image used */
-      background-image: url('img/index/wok_charred_edamame_food_photographer_chris_wessling.jpg');
+      background-image: url('images/bb4.jpg');
       /* Full height */
       height: 100%;
       width: 100%;
@@ -128,7 +208,7 @@ iframe {
       .parallax-image-4 {
 
          /* The image used */
-      background-image: url('img/index/carson_kitchen_patio.jpg');
+      background-image: url('images/bb5.jpg');
       /* Full height */
       height: 100%;
       width: 100%;
@@ -142,9 +222,41 @@ iframe {
       
       }
 
+      .parallax-image-5 {
+
+/* The image used */
+background-image: url('images/bb6.jpg');
+/* Full height */
+height: 100%;
+width: 100%;
+margin: auto;
+padding: 0;
+/* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+
+
       .parallax {
       /* The image used */
       background-image: url('images/bb1.jpg');
+      /* Full height */
+      height: 100%;
+      width: 100%;
+      margin: auto;
+      padding: 0;
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+     }
+     .parallax1 {
+      /* The image used */
+      background-image: url('images/bb3.jpg');
       /* Full height */
       height: 100%;
       width: 100%;
@@ -412,6 +524,17 @@ div.desc {
     
         </script>
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+
+
+
     
 
   </head>
@@ -419,15 +542,7 @@ div.desc {
   <body>
 
 
-    <div class="aspNetHidden">
-                <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="auTIf3GUp3zGAUq+hgF1K4tZiU/zow1Zi2eSmWQYYA4sszZ39RjKsFDg0iSgtX1yDDWG6tbdru65Wemb2gqZVt87+3vjud4BaaW+6IOWKig=" />
-    </div>
-            
-    <div class="aspNetHidden">
-                <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
-                <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="5FrbgS0YwRjI7O9qf14wkZmM25EOu+4XD7CLQVxVKudQIR0ebLF+r7Z+0SXPFlYyUn7tead/8d2pARDHAzV53ga2tNArsOyXbh5FDzZBf/lkFkVOLK6NM/pUYeINgiB7rmxS2JCkQbthPa1jU5/2aN0JUGNeb/NufN6zd8ROykM12GQavOvZdzFimThTG1Af" />
-    </div>
-            
+    
 
   
     <div class="container nav-container" style="margin: auto;height: auto;width: auto; background-color: transparent"> 
@@ -439,9 +554,13 @@ div.desc {
            <div class="col-md-6 p0 image" style="height:auto;width: auto;background-color:transparent">
             
              <div class="" style=" margin: auto;height: auto;width: auto;background-color: transparent">
-                    <img src="Admin/img/modilogo.PNG" height="100px"/>
+
 
         
+                               <a class=" " href="">
+                                       <img src="Admin/img/modilogo.PNG" height="100px"/>
+                               </a>
+           
                                <ul class=" nav-ul-hide nav-ul-show"  style="margin:auto; float: right; height: auto;width: auto; background-color: transparent">
                                  <li class="li nav-ul-li nav-ul-li-bl">
                                      <a class=" nav-ul-li-a nav-ul-li-a-no" href="">
@@ -468,11 +587,11 @@ div.desc {
           <div class="align-bottom text-center module widget-handle mobile-toggle left visible-sm visible-xs" style="margin: auto; height: auto;width: auto">
             <ul class="navbar-brand list-inline social-list mb24">
               <li>
-                <a href="https://twitter.com"><i class="ti-twitter-alt icon-sm"></i>
+                <a href="https://twitter.com/EmobiTechno"><i class="ti-twitter-alt icon-sm"></i>
                 </a>
               </li>
               <li>
-                <a href="https://www.facebook.com"><i class="ti-facebook icon-sm"></i>
+                <a href="https://www.facebook.com/modilabour24/"><i class="ti-facebook icon-sm"></i>
                 </a>
               </li>
               <li>
@@ -491,23 +610,24 @@ div.desc {
                 <li class="li nav-ul-li nav-ul-li-bl"><a class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no" href="index.html">Home</a></li>
                 <li class="li nav-ul-li nav-ul-li-bl"><a class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no" href="index.html#location">Location</a></li>
                 <li class="li nav-ul-li nav-ul-li-bl"><a class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no" href="index.html#about">About</a></li>
-                <li class="li nav-ul-li nav-ul-li-bl"><a class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no" href="index.html#skills.html">Skills</a></li>
-                <li class="li nav-ul-li nav-ul-li-bl"><a class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no" href="index.html#services.html">Services</a></li>
-                <li class="li nav-ul-li nav-ul-li-bl"><a class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no" href="client.html">Client</a></li>
-                <li class="li nav-ul-li nav-ul-li-bl"><a class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no" href="index.html#contact.html">Contact</a></li>                
-                <li class="li nav-ul-li nav-ul-li-bl">
-                    <a class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no" href="">
+                <li class="li nav-ul-li nav-ul-li-bl"><a class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no" href="index.html#skills">Skills</a></li>
+                <li class="li nav-ul-li nav-ul-li-bl"><a class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no" href="index.html#services">Services</a></li>
+                <li class="li nav-ul-li nav-ul-li-bl"><a class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no" href="index.html#client">Client</a></li>
+                <li class="li nav-ul-li nav-ul-li-bl"><a class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no" href="index.html#contact">Contact</a></li>                
+                <li class="li nav-ul-li nav-ul-li-bl dropdown">
+                    <a class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no dropbtn" href="#">
                         Account
                     </a>
-                    <div class="dropdown-menu" style="list-style-type: none;margin:auto; float: right; height: auto;width: auto; background-color: transparent">
-                        <a class="dropdown-item navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no" href="">
-                            Login
-                        </a>
-                        <a class="dropdown-item navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no" href="">
-                            Register
-                        </a>
-                    </div>
-                
+
+                    <div class="dropdown-content dropdown-menu navbar-header navbar-brand" style="list-style-type: none;margin:auto; float: right; height: auto;width: auto; background-color: darkslategray">
+                            <a href="#myPopupDialog" data-rel="popup" data-position-to="window" data-transition="fade" >
+                               Login
+                             </a>
+                             <a href="#myPopupDialog" data-rel="popup" data-position-to="window" data-transition="fade" >
+                               Register
+                             </a>
+                    </div>                      
+                        
                 </li>
                 <li class="li nav-ul-li nav-ul-li-bl"><a class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no" href="https://www.facebook.com/modilabour24/"><i class="ti-facebook"></i></a></li>
                 <li class="li nav-ul-li nav-ul-li-bl"><a class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no" href="https://twitter.com/EmobiTechno"><i class="ti-twitter-alt"></i></a></li>
@@ -520,15 +640,42 @@ div.desc {
        </section>
 
     </div> 
-        
 
 
+
+
+     <!-- banner -->
+                            
+     <!-- banner-slider -->
+
+
+    <div id="about" class="parallax" style="margin: auto;height: 500px;width: auto;background-color: transparent">
+
+            <section id="about" class="" style="margin: auto;height: auto;width: 800px;background-color: transparent">
+
+
+                    <img class="mySlides w3-animate-fading" src="images/bb1.jpg" style="margin:auto; width: 100%;height: 500px; background-color: transparent">
+          
+
+                    <img class="mySlides w3-animate-fading" src="images/bb6.jpg" style="margin:auto; width: 100%;height: 500px; background-color: transparent">
+          
+               
+                    <img class="mySlides w3-animate-fading" src="images/bb4.jpg" style="margin:auto; width: 100%;height: 500px; background-color: transparent">
+                        
+
+            </section>
+       
+    </div>
+       
+                      
+    
+
+     <div class="clearfix" style="margin: auto;height: auto;width: auto; background-color: transparent"></div>
+                                
+     <!-- //banner-slider -->
   
 
 
-    
-    <section class="parallax">
-    </section>
 
 
 
@@ -567,82 +714,14 @@ div.desc {
 
 
 
-     <!-- banner -->
-                            
-     <!-- banner-slider -->
-     
-                            
-     <div class="w3l_banner_info parallax" style="margin: auto;height: auto;width: auto;color: snow; background-color: transparent"> 
-                                
-                                    <div class="slider">
-                                        
-                                        <div class="callbacks_container">
-                                            
-                                            <ul class="rslides" id="slider3" style="height:500px">
-                                                <li>
-                                                    
-                                                    <div class="slider-img">
-                                                        
-                                                        <div class="slider_banner_info">
-                    
-                                                        </div>
-                                                        
-                                                        <div class="text">
-                                                            <h3 class="word wisteria">We Are The Best Home Service For Making Your Home Shine</h3>
-                                                        </div>
-                                                    
-                                                    </div>
-                                                
-                                                </li>
-                                                <li>
-                                                    
-                                                    <div class="slider-img-2">
-                                                        
-                                                        <div class="slider_banner_info">
-                                                            
-                                                            <div class="text">
-                                                                <h3 class="word wisteria">Making your Home Shine and Spotless Is Our Business And Priority</h3>
-                                                            </div>
-                                                        
-                                                        </div>
-                                                    
-                                                    </div>
-                                                
-                                                </li>
-                                                <li>
-                                                    
-                                                    <div class="slider-img-3">
-                                                        
-                                                        <div class="slider_banner_info">
-                                                            
-                                                            <div class="text">
-                    
-                                                                <h3 class="word wisteria">Our Home Service Providers will Make You Proud in Society</h3>
-                                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                                                            
-                                                            </div>
-                                                        
-                                                        </div>
-                                                    
-                                                    </div>
-                                                
-                                                </li>
-                                            </ul>
-                                        
-                                        </div>
-                                    
-                                    </div>
-                                
-     </div>
 
-     <div class="clearfix" style="margin: auto;height: auto;width: auto; background-color: transparent"></div>
-                                
-     <!-- //banner-slider -->
+    <section class="parallax-image-2 "></section>
 
 
 
 
-    <section id="services" class="bannerbottom py-lg-5 py-md-4 py-md-3 py-2 parallax" style="margin: auto;height: auto;width: auto; background-color: transparent">
+
+    <section id="services" class="bannerbottom py-lg-5 py-md-4 py-md-3 py-2 parallax1" style="margin: auto;height: auto;width: auto; background-color: transparent">
         
             <div class="bannerbottom py-lg-5 py-md-4 py-md-3 py-2" style="margin: auto;height: auto;width: auto; background-color: transparent" >
                 
@@ -854,6 +933,12 @@ div.desc {
 
 
 
+     <section class="parallax-image-3"></section>
+
+
+
+
+
      <!-- Skills -->
     
     <section id="skills" class="skills py-lg-5 py-md-4 py-md-3 py-2 parallax" style="margin: auto;height: auto;width: auto; background-color: transparent">
@@ -940,6 +1025,14 @@ div.desc {
 
 
 
+    <section class="parallax-image-4"></section>
+
+
+    
+
+
+
+
      <!-- Footer-->
     
      <section class="footer" style="margin: auto;height: auto;width: auto; background-color: transparent">
@@ -969,7 +1062,7 @@ div.desc {
                                 </ul>
                             </td>
                             <td style="width:30%">
-                                <img src="Admin/img/google play.jpg" height="50px"/>
+                                <img src="Admin/img/google play.jpg" height="50px;" width="100@"/>
                                 
                                 <div class="input-group" style="margin-top:20px">
                                     
@@ -1321,6 +1414,7 @@ div.desc {
     <!-- //scrolling script -->
     <!--//start-smoth-scrolling -->
     </form>
+    
 
 
 
@@ -1328,65 +1422,50 @@ div.desc {
 
 
 
-
-
-
-
-
-
-
-
-
-
-     <footer id="Footer" class="parallax" style="margin: auto;height: auto;width: auto;background-color: transparent">
+     <footer id="Footer" class="parallax-image-1" style="margin: auto;height: auto;width: auto;background-color: transparent">
 
         <div>
 
           <section id="footer" style="margin: auto;height: auto;width: auto;background-color: transparent">
            
-            <ul class=" responsive" style="float: left;list-style-type: none;margin: auto;height: auto;width:100%; background-color: transparent"> 
-                    <header>
-                            <!-- header -->
-                            
-                            <div id="contact" style="width:100%;border:1px solid #ccc;padding:5px;background:#333;color:#fff">
-                                <table style="width:100%">
-                                    <tr>
-                                        <td>
-                                            <ul class="social-icons icon-circle icon-zoom list-unstyled list-inline">
-                                                <li>
-                                                    <a href="#" style="color:#fff"> Email: support@modilabour.com</a>
-                                                </li>
-                                            </ul>
-                                        </td>
-                                        <td>
-                                            <ul class="social-icons icon-circle icon-zoom list-unstyled list-inline">
-                                                <li>
-                                                    <i class="fa fa-phone" alt="call" style="font-size:25px;margin-top: 0px;margin-left: 0px;">
-                                                        <strong> &nbsp; +91 11-43011836  </strong>
-                                                    </i>
-                                                </li>
-                                            </ul>
-                                        </td>
-                                        <td>
-                                            <ul class="social-icons icon-circle icon-zoom list-unstyled list-inline">
-                                                <li>
-                                                    <a href="whatsapp://send?text=Hello!&amp;phone=+918750084577" style="color:#fff;font-weight: bold;font-size: 16px;">
-                                                        <i class="fa fa-whatsapp" style="font-size:25px; padding: 5px;">
-                                                        </i>
-                                                        +91 8750084577
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </td>
-                                   </tr>
-                                </table>
-                            
-                            </div> 
-                            
-
-                            <!-- //header -->
-                            
-                    </header>
+            <ul class=" responsive" style="float: left;list-style-type: none;margin: auto;height: auto;width:100%; background-color: transparent">
+                
+                
+                <div id="contact" style="width:100%;border:1px solid #ccc;padding:5px;background:#333;color:#fff">
+                    <table style="width:100%">
+                        <tr>
+                            <td>
+                                <ul class="social-icons icon-circle icon-zoom list-unstyled list-inline">
+                                    <li>
+                                        <a href="#" style="color:#fff"> Email: support@modilabour.com</a>
+                                    </li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul class="social-icons icon-circle icon-zoom list-unstyled list-inline">
+                                    <li>
+                                        <i class="fa fa-phone" alt="call" style="font-size:25px;margin-top: 0px;margin-left: 0px;">
+                                            <strong> &nbsp; +91 11-43011836  </strong>
+                                        </i>
+                                    </li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul class="social-icons icon-circle icon-zoom list-unstyled list-inline">
+                                    <li>
+                                        <a href="whatsapp://send?text=Hello!&amp;phone=+918750084577" style="color:#fff;font-weight: bold;font-size: 16px;">
+                                            <i class="fa fa-whatsapp" style="font-size:25px; padding: 5px;">
+                                            </i>
+                                            +91 8750084577
+                                        </a>
+                                    </li>
+                                </ul>
+                            </td>
+                       </tr>
+                    </table>
+                
+                </div> 
+                    
 
 
                     <div class="copyright" style="background:white;padding:5px;font-weight:bold">
@@ -1462,85 +1541,9 @@ div.desc {
 
 
      <!-- bootstrap-pop-up for login and register -->
-    
-    <div class="modal video-modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal">
-        
-            <div class="modal-dialog" role="document">
-                
-                <div class="modal-content">
-                    
-                    <div class="modal-header">
-                        
-                        Modi Labour
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    
-                    </div>
-                    
-                    <section>
-                        
-                        <div class="modal-body">
-                            
-                            <div class="loginf_module">
-                                
-                                <div class="module form-module">
-                                    
-                                    <div class="toggle">
-                                        
-                                        <i class="fa fa-times fa-pencil"></i>
-                                        
-                                        <div class="tooltip">
-                                            Register
-                                        </div>
-                                    
-                                    </div>
-                                    
-                                    <div class="form">
-                                        
-                                        <h3>Login to your account</h3>
-                                        <form action="#" method="post">
-                                            <input type="text" name="Username" placeholder="Username" required="">
-                                            <input type="password" name="Password" placeholder="Password" required="">
-                                            <input type="submit" value="Login">
-                                        </form>
-                                        
-                                        <div class="cta">
-                                            
-                                            <a href="#">
-                                                Forgot password?
-                                            </a>
-                                        
-                                        </div>
-                                    
-                                    </div>
-                                    
-                                    <div class="form">
-                                        
-                                        <h3>Create a new account</h3>
-                                        <form action="#" method="post">
-                                            <input type="text" name="Username" placeholder="Username" required="">
-                                            <input type="password" name="Password" placeholder="Password" required="">
-                                            <input type="email" name="Email" placeholder="Email address" required="">
-                                            <input type="text" name="Phone" placeholder="Phone Number" required="">
-                                            <input type="submit" value="Register">
-                                        </form>
-                                    
-                                    </div>
-                                
-                                </div>
-                            
-                            </div>
-                        
-                        </div>
-                    
-                    </section>
-                
-                </div>
-            
-            </div>
-        
-    </div>
+
+
+
         
      <!-- //bootstrap-pop-up for login and register-->
 
@@ -1552,6 +1555,23 @@ div.desc {
           $('nav ul').slideToggle();
         })
    </script>
+
+   <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+               x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 9000); // Change image every 2 seconds
+        }
+   </script> 
 
     
 
